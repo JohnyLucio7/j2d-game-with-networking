@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="j2d-game-with-networking/src"/>
+	<classpathentry kind="src" path="j2d-game-with-networking/res"/>
+	<classpathentry kind="output" path="j2d-game-with-networking/bin"/>
+</classpath>
