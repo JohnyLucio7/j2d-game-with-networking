@@ -11,6 +11,8 @@ import java.awt.image.DataBufferInt;
 
 import javax.swing.JFrame;
 
+import gfx.Spritesheet;
+
 public class Game extends Canvas implements Runnable {
 
 	private static final long serialVersionUID = 1L;
@@ -26,6 +28,8 @@ public class Game extends Canvas implements Runnable {
 	private int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
 	private int ticksCount;
 
+	private Spritesheet spritesheet = new Spritesheet("/spritesheet.png");
+
 	public Game() {
 		initFrame();
 	}
@@ -34,6 +38,7 @@ public class Game extends Canvas implements Runnable {
 		setMinimumSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
 		setMaximumSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
 		setPreferredSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
+		setFocusable(true);
 
 		frame = new JFrame(NAME);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
